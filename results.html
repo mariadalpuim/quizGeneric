@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Who am I? RESULTS</title>
+</head>
+<body class="bodyResultsPage">
+    <header class="headerLandingPage headResultsPage">
+        <img class="logoLandingPage logoResultsPage" src="./imgs/logo2.png" alt="Gearset logo">
+    </header>
+    <main>
+    <div class="viewAnswersContainer" id="answersBox">
+            <h1 class="answersTitle">CORRECT ANSWERS</h1>
+            <div class="sentencesList">
+                <h2 class="sentencesListText">"The “most royal” person that was in touching distance of me was Queen Beatrix of the Netherlands."</h2>
+                <div class="listFlex">
+                    <p class="choiceNameList" data-number="1">Valerio</p>
+                    <img class="choicePhotoList" data-number="1" src="./imgs/photos/valerio-rounded.png" alt="option">
+                </div>
+                <p class="dashBar">-</p>
+                <h2 class="sentencesListText">"I have performed a piano concerto at West Road Concert Hall in Cambridge."</h2>
+                <div class="listFlex">
+                    <p class="choiceNameList" data-number="1">Richard</p>
+                    <img class="choicePhotoList" data-number="1" src="./imgs/photos/richard-o-rounded.png" alt="option">
+                </div>
+            </div>
+            <div>
+                <button class="btn" id="btnCloseAnswers">X</button>
+            </div>
+    </div>
+    <div class="landingPageResultsContainer">
+        <form class="gameTagResults">
+            <h2>Who am I?</h2>
+            <h3>Gearset edition</h2> 
+            <p class="dashBar">_</p>
+            <h1>RESULTS</h1> 
+        </form>
+        <div class="resultsContainer" id="resultsBox">
+            <div class="startFlexContainer">
+                <h2 class="resultsText" id="usernameResults">username placeholder</h2>
+                <h2 class="resultsText" id="finalScore">0 Points</h2>
+                <h2 class="resultsText" id="correctAnswers">5/10 correct</h2>
+                <a href="#" class="btnX" id="btnViewAnswers">view answers</a>  
+            </div>
+            <div class="flexButtons">
+                <button type="submit" id="saveScore" class="btn">SAVE</button>
+                <a id="playAgain" class="btn" href="./index.html">TRY AGAIN</a>
+            </div>    
+        </div>
+    </div>
+    
+    </main>
+    <footer class="footerLandingPage footerResultsPage">
+        <h2>created by</h2>
+        <img src="./imgs/photos/maria-rounded.png" alt="creator picture: Maria">
+    </footer>
+    <script defer src="./js/app.js"></script>
+</body>
+</html>

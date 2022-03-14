@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Who am I? QUIZ</title>
+</head>
+<body class="bodyQuizPage bodyResultsPage">
+    <header class="headQuizPage headResultsPage">
+        <div class="gameTag gameTagQuizPage">
+            <h2>Who am I?</h2> 
+            <h3>Gearset edition</h2>
+        </div>  
+    </header>
+    <main class="flexQuizBody">
+        <div class="sentence">
+            <!-- <h1 id="sentenceNumber">#0</h1> -->
+            <h2 id="sentenceQuote">“Placeholder”</h2>
+        </div>
+        <div class="questionTag">
+            <p class="dashBarQuiz">_</p>
+            <h2>Who am I?</h2> 
+        </div>
+        <div class="optionsContainer">
+            <div id="game">
+                <div class="choiceContainer">
+                    <img class="choicePhoto" data-number="1" src="./imgs/photos/generic.png" alt="option1">
+                    <p class="choiceName" data-number="1">Choice 1</p>
+                </div>
+                <div class="choiceContainer">
+                    <img class="choicePhoto" data-number="2" src="./imgs/photos/generic.png" alt="option2">
+                    <p class="choiceName" data-number="2">Choice 2</p>
+                </div>
+                <div class="choiceContainer">
+                    <img class="choicePhoto" data-number="3" src="./imgs/photos/generic.png" alt="option3">
+                    <p class="choiceName" data-number="3">Choice 3</p>
+                </div>
+            </div>
+        </div>
+        <div class="headsDisplay">
+            <div class="headsDisplayItem">
+                <h1 class="headsDisplayTitle" id="progressText">Placeholder</h1>
+                    <div id="progressBar">
+                        <div id="progressBarFull">
+
+                        </div>
+                    </div>
+                <!-- <p class="headsDisplayText" id="questionCounterText">1/10</p> -->
+            </div>
+            <div class="headsDisplayItem" id="usernameContainer">
+                <h1 class="headsDisplayTitle" id="player">Player:</h1>
+                <p class="headsDisplayText" id="usernameActive">placeholder</p>
+            </div> 
+            <div class="headsDisplayItem" id="scoreContainer">
+                <h1 class="headsDisplayTitle">Score</h1>
+                <p class="headsDisplayText" id="scoreText">0</p>
+            </div>
+        </div> 
+    </main>
+    <footer class="footerQuizPage footerResultsPage">
+        <img class="logoLandingPage logoQuizPage logoResultsPage" src="imgs/logo2.png" alt="Gearset logo">
+    </footer>
+    <script defer src="js/app.js"></script>
+</body>
+</html>

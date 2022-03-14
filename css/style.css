@@ -1,0 +1,493 @@
+/* color orange #faae27 or rgba(250,174,39,255)
+color blue #222e54 or rgba(34,46,84,255) */
+
+/* MOBILE FIRST APPROACH */
+/* ----------- defaults PAGE 1 LANDING -----------  */
+:root {
+  background-color: #222e54;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+img {
+  width: 100px;
+}
+
+/* not sure if I want this in the layout */
+/* body {
+  background-image: url(/imgs/background2-1080x1920.jpg);
+  background-size: 400px;
+  height: 100vh;
+  background-position: right top;
+  background-repeat: no-repeat;
+} */
+
+.btn {
+  font-size: 1.8rem;
+  padding: 1rem;
+  background-color: rgba(250, 174, 39, 255);
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.49);
+  padding: 1.1rem;
+}
+
+/* ----------- defaults PAGE 2 QUIZ -----------  */
+
+.choiceContainer:hover {
+  cursor: pointer;
+  /* box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.49); */
+  /* padding: 2rem; */
+}
+
+.choicePhoto:hover {
+  width: 103px;
+}
+
+/* ----------- defaults PAGE 3 RESULTS -----------  */
+
+/* ----------- style PAGE 1 LANDING -----------  */
+/* ---- style PAGE 1 LANDING - header ----  */
+.headerLandingPage {
+  padding: 10px;
+  float: left;
+}
+
+/* ---- style PAGE 1 LANDING - main ----  */
+.landingPageContainer {
+  width: 97vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  /* background-color: red; */
+}
+
+.gameTag h1 {
+  font-size: 2.7rem;
+  padding-top: 60px;
+}
+
+.gameTag p {
+  font-size: 5rem;
+  margin-bottom: 5rem;
+  font-weight: bold;
+  color: rgba(250, 174, 39, 255);
+}
+
+.gameTag h2 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.gameTag h3 {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  color: rgba(250, 174, 39, 255);
+  padding-bottom: 50px;
+}
+
+#btnPlay {
+  padding: 1rem 3rem;
+}
+
+#btnPlay:hover {
+  padding: 1.1rem 3.1rem;
+}
+
+.startBoxContainer {
+  background-color: rgba(250, 174, 39, 1);
+  position: absolute;
+  margin-top: 500px;
+  border-radius: 5px;
+  padding: 25px 35px 15px 35px;
+}
+
+.startFlexContainer {
+  width: 60vw;
+  max-width: 500px;
+  height: 15vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inputUsername {
+  padding: 0.7rem 12%;
+  font-size: 1.5rem;
+  color: rgba(34, 46, 84, 255);
+  border-radius: 5px;
+  border: none;
+}
+
+#btnSubmit {
+  font-size: 11px;
+  width: 7rem;
+  background-color: rgba(34, 46, 84, 255);
+  border: none;
+}
+
+#btnStart {
+  background-color: rgba(34, 46, 84, 255);
+  display: none;
+  font-size: 1.5rem;
+  width: 100%;
+  border: none;
+}
+
+#btnClose {
+  background-color: rgba(34, 46, 84, 255);
+  font-size: 0.8rem;
+  width: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.startBoxContainer {
+  display: none;
+}
+
+/* ---- style PAGE 1 LANDING - footer ----  */
+.footerLandingPage h2 {
+  font-size: 1.3rem;
+}
+.footerLandingPage img {
+  width: 50px;
+}
+
+.footerLandingPage {
+  position: fixed;
+  /* top: 85vh; */
+  right: 10px;
+  bottom: 10px;
+}
+
+/* ----------- style PAGE 2 QUIZ -----------  */
+/* ---- style PAGE 2 QUIZ - header ----  */
+.gameTagQuizPage h2 {
+  margin-top: 1rem;
+  font-size: 3rem;
+}
+
+/*spacing between heading and the rest */
+.gameTagQuizPage h3 {
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+}
+
+/* ---- style PAGE 2 QUIZ - main ----  */
+.flexQuizBody {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: space-evenly;
+  /* background-color: red; */
+}
+
+.sentence {
+  display: flex;
+  margin: 0rem 2rem 0rem 2rem;
+  /* background-color: white; */
+}
+
+#sentenceQuote {
+  font-size: 2.5rem;
+  font-style: italic;
+  text-align: left;
+  color: rgba(250, 174, 39, 255);
+}
+
+/* not happy with this, check later */
+.questionTag {
+  align-self: flex-end;
+  margin-right: 2rem;
+  margin-top: -4rem;
+}
+
+.questionTag > * {
+  text-align: left;
+  font-size: 18px;
+}
+
+.questionTag p {
+  color: rgba(250, 174, 39, 255);
+}
+
+.choiceContainer {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: 3rem;
+  /* background-color: blue; */
+}
+
+.correct {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: red;
+}
+
+/* don't know where to place it yet. */
+.headsDisplay {
+  display: flex;
+  /* flex-direction: column; */
+  width: 100vw;
+  justify-content: space-evenly;
+  font-size: 1.7rem;
+  margin-top: 3rem;
+  /* background-color: red; */
+}
+
+.headsDisplayTitle {
+  color: rgba(250, 174, 39, 255);
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.headsDisplayText {
+  margin-right: 1rem;
+  font-size: 2.2rem;
+}
+
+#progressBar {
+  width: 15rem;
+  height: 2.5rem;
+  border: 0.3rem solid rgba(250, 174, 39, 255);
+  /* background-color: blue; */
+}
+
+#progressText {
+  color: white;
+}
+
+/* starts filling 0% and javascript will change the widht to increase the bar */
+#progressBarFull {
+  height: 2rem;
+  background-color: rgba(250, 174, 39, 255);
+  width: 0%;
+}
+
+/* ---- style PAGE 2 QUIZ - footer ----  */
+.footerQuizPage {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}
+
+/* ----------- style PAGE 3 RESULTS -----------  */
+/* ---- style PAGE 3 RESULTS - header ----  */
+
+/* ---- style PAGE 3 RESULTS - main ----  */
+.landingPageResultsContainer {
+  width: 97vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  /* background-color: white; */
+}
+
+.gameTagResults {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: -25px; */
+}
+
+/* results word */
+.gameTagResults h1 {
+  font-size: 5rem;
+  padding-top: 10px;
+}
+
+/* dash symbol _ */
+.gameTagResults p {
+  font-size: 5rem;
+  font-weight: bold;
+  /* have to make negative because _ adds too much on top */
+  margin-top: -35px;
+  color: rgba(250, 174, 39, 255);
+  /* background-color: red; */
+}
+
+.gameTagResults h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.gameTagResults h3 {
+  font-size: 2rem;
+  color: rgba(250, 174, 39, 255);
+}
+
+.resultsContainer {
+  background-color: rgba(250, 174, 39, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+  width: 70vw;
+  height: 40vh;
+  margin: 2rem;
+  border-radius: 5px;
+  padding: 25px 35px;
+}
+
+.startFlexContainer {
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+  /* background-color: red; */
+}
+
+.resultsText {
+  font-size: 2rem;
+}
+
+#usernameResults {
+  color: #222e54;
+  font-size: 2.5rem;
+}
+
+#btnViewAnswers {
+  font-size: 1.2rem;
+  color: #222e54;
+  background-color: none;
+}
+
+#btnViewAnswers:hover {
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+#playAgain,
+#saveScore {
+  font-size: 11px;
+  width: 6.5rem;
+  height: 3rem;
+  background-color: rgba(34, 46, 84, 255);
+  border: none;
+}
+
+#playAgain {
+  width: 9rem;
+}
+
+.flexButtons {
+  display: flex;
+}
+
+.flexButtons * {
+  margin: 2rem 2rem 0px 2rem;
+}
+
+.viewAnswersContainer {
+  background-color: rgba(250, 174, 39, 1);
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 5px;
+  padding: 25px 35px 15px 35px;
+}
+
+.answersTitle {
+  color: rgba(34, 46, 84, 255);
+  margin-bottom: 1rem;
+}
+
+.listFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.listFlex > * {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.choiceNameList {
+  font-size: 1.5rem;
+  color: rgba(34, 46, 84, 255);
+}
+
+.choicePhotoList {
+  width: 50px;
+}
+
+.dashBar {
+  color: rgba(34, 46, 84, 255);
+  font-size: 2rem;
+}
+
+#btnCloseAnswers {
+  background-color: rgba(34, 46, 84, 255);
+  font-size: 0.8rem;
+  width: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.viewAnswersContainer {
+  display: none;
+}
+
+/* ---- style PAGE 3 RESULTS - footer ----  */
+
+/* MOBILE FIRST APPROACH - DESKTOP BELLOW */
+/* ----------- defaults PAGE 1 LANDING -----------  */
+@media screen and (min-width: 801px) {
+  /* not sure if I want this in the layout */
+  /* body {
+    background-image: url(/imgs/background2-1080x1920.jpg);
+    background-size: 500px;
+    height: 100vh;
+    background-position: right top;
+    background-repeat: no-repeat;
+  } */
+}
